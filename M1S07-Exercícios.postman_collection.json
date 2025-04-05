@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "8399aa51-631e-4627-9a4e-fc5209022bb3",
+		"name": "M1S07-Exercícios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38383834"
+	},
+	"item": [
+		{
+			"name": "routes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/routes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"routes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "routes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Bairro planalto 1\",\n    \"coverageArea\": \"Lado norte do bairro\",\n    \"efficiencyPercentage\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/routes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"routes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "collectors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/collectors",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"collectors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "collectors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Gabriel\",\n    \"description\": \"The best\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/collectors",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"collectors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contracts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/contracts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contracts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contracts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"collector\": {\n        \"id\": 2\n    },\n    \"routes\": [\n        {\n            \"id\": 1\n        },\n        {\n            \"id\": 2\n        },\n        {\n            \"id\": 3\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/contracts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contracts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
